@@ -46,7 +46,7 @@ class _AutoLocationMapScreenState extends State<AutoLocationMapScreen> {
     _location.changeSettings(
       accuracy: LocationAccuracy.high,
       interval: 10000,
-      distanceFilter: 5,
+      // distanceFilter: 5,
     );
     _locationSubscription = _location.onLocationChanged.listen((locationData) {
       _updateLocation(locationData, animate: true);
